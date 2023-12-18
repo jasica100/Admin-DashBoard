@@ -1,0 +1,33 @@
+/* CSS File */
+
+/* Breakpoints */
+:root {
+  --sm: 480px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1200px;
+  --xxl: 1400px;
+}
+
+/* Media Queries */
+@media screen and (max-width: var(--sm)) {
+  /* Styles for small screens (less than 480px) */
+}
+
+@media screen and (min-width: var(--sm)) and (max-width: var(--md)) {
+  /* Styles for medium screens (between 480px and 768px) */
+}
+
+@media screen and (min-width: var(--md)) and (max-width: var(--lg)) {
+  /* Styles for large screens (between 768px and 1024px) */
+}
+
+@media screen and (min-width: var(--lg)) and (max-width: var(--xl)) {
+  /* Styles for extra-large screens (between 1024px and 1200px) */
+}
+
+@media screen and (min-width: var(--xl)) and (max-width: var(--xxl)) {
+  /* Styles for double extra-large screens (between 1200px and 1400px) */
+}
+
+/* Additional styles for screens larger than 1400px can be added without a media query */

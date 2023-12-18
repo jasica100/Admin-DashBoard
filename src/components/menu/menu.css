@@ -1,0 +1,30 @@
+/* Import statements should be handled in your build process or directly in your HTML file for CSS */
+@import "../../styles/variables.css";
+@import "../../styles/responsive.css";
+.menu .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .menu .item .title {
+    font-size: 12px;
+    font-weight: 200;
+    color: #f8f8f8; /* Replace $soft-color with its corresponding value */
+    text-transform: uppercase;
+  }
+  
+
+  .menu .item .listItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+.menu.item.title.listItem:hover {
+    background: rgb(54, 56, 59);
+  }
+  

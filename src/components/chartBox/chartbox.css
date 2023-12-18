@@ -1,0 +1,60 @@
+/* Import responsive styles */
+@import "../../styles/responsive.css";
+
+.chartBox {
+  display: flex;
+  height: 100%;
+}
+
+/* Apply flex-direction: column on small screens and below */
+@media screen and (max-width: 767px) {
+  .chartBox {
+    flex-direction: column;
+  }
+}
+
+.chartBox .boxInfo {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px; /* Apply gap on small screens and below */
+}
+  .boxInfo .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px; /* Font size for xxl screen */
+  }
+
+  .boxInfo h1 {
+    font-size: 20px; /* Font size for xxl screen */
+  }
+
+
+.chartBox .chartInfo {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+  .chartInfo .chart {
+    width: 100%;
+    height: 100%;
+  }
+
+  .chartInfo .texts {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+    .texts .percentage {
+      font-weight: bold;
+      font-size: 20px; /* Font size for xxl screen */
+    }
+
+    .texts .duration {
+      font-size: 14px; /* Font size for xxl screen */
+    }
